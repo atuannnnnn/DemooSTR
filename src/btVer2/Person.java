@@ -1,15 +1,18 @@
-package btapVer1;
+package btVer2;
 
 import java.util.Date;
 
 public abstract class Person implements IPerson{
-    private String id;
-    private String name;
-    private Date dateOfBirth;
+    protected String id;
+    protected String fullName;
+    protected Date dateOfBirth;
+
+    public Person() {
+    }
 
     public Person(String id, String fullName, Date dateOfBirth) {
         this.id = id;
-        this.name = name;
+        this.fullName = fullName;
         this.dateOfBirth = dateOfBirth;
     }
 
@@ -21,12 +24,12 @@ public abstract class Person implements IPerson{
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getFullName() {
+        return fullName;
     }
 
     public void setFullName(String fullName) {
-        this.name = name;
+        this.fullName = fullName;
     }
 
     public Date getDateOfBirth() {
@@ -36,9 +39,7 @@ public abstract class Person implements IPerson{
     public void setDateOfBirth(Date dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
-
-    @Override
+    @Override 
     public abstract void displayInfo();
-    
     
 }
