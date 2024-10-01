@@ -1,4 +1,3 @@
-
 package Ver3;
 
 import java.text.SimpleDateFormat;
@@ -6,6 +5,7 @@ import java.util.Date;
 import java.util.Scanner;
 
 public class Teacher extends Person {
+
     private String department;
     private String teachingSubject;
 
@@ -60,7 +60,7 @@ public class Teacher extends Person {
     }
 
     public void updateTeacher() {
-     
+
     }
 
     public void displayInfo() {
