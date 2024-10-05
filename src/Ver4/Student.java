@@ -1,4 +1,4 @@
-package Ver4;
+    package Ver4;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -45,7 +45,7 @@ public class Student extends Person {
         String ngaySinh = sc.nextLine();
         SimpleDateFormat sft = new SimpleDateFormat("dd/MM/yyyy");
         try {
-            String dateOfDate = sft.format(ngaySinh);
+            Date dateOfDate = sft.parse(ngaySinh);
             this.setDateOfBirth(dateOfBirth);
         } catch (Exception e) {
             System.out.println("Wrong fomat!");
